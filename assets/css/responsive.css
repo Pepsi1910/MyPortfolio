@@ -1,0 +1,27 @@
+@media only screen and (max-width: 576px) {
+    .navbar-brand{
+        max-width: 300px;
+        width: calc(100% - 75px);
+        min-width: 224px;
+    }
+
+    .logo-img{
+        max-width: 300px;
+        width: calc(100% - 75px);
+        min-width: 224px;
+    }
+
+    #logo--nav{
+        height: 40px;
+    }
+
+    #logo--footer{
+        height: 50px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+    .btn-view{
+        font-size: 10px;
+    }
+}

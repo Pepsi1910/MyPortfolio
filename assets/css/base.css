@@ -1,0 +1,52 @@
+:root{
+    --absolute-primary: #0A0119;
+
+    --white-90: #F6F6FE;
+    --white-95: #FAFBFF;
+    --white-97: #F9F5FF;
+}
+
+html, body{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: var(--absolute-primary);
+}
+
+.btn{
+    padding: 12px 36px;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.btn__white{
+    background-color: var(--white-97);
+}
+
+.title{
+    font-size: 36px;
+    line-height: 28px;
+    color: var(--white-95);
+}
+
+.introduce{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--white-95);
+}
+
+.btn-view{
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+    line-height: 24px;
+    font-family: 500;
+    background-color: transparent;
+    color: var(--white-95);
+    border: 2px solid var(--white-90);
+}   
+

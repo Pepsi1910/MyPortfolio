@@ -1,0 +1,245 @@
+.custom-nav li a::after{
+    content: "";
+    display: block;
+    position: relative;
+    top: 3px;
+    width: 0%;
+    height: 4px;
+    background-color: white;
+    transition: width 500ms ease-in-out;
+}
+
+.custom-nav li a:hover::after{
+    width: 100%;
+}
+.navbar-nav #link-custom{
+    font-size: 22px;
+    line-height: 27px;
+    color: var(--white-97);
+}
+
+.hero{
+    margin-top: 80px;
+}
+
+.hero-name{
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--white-95);
+    margin-bottom: 24px;
+}
+.hero-job{
+    font-size: 48px;
+    line-height: 58px;
+    color: var(--white-97);
+    margin-bottom: 16px;
+}
+
+.text-discolor{
+    background: linear-gradient(to right, #eee, blue);
+
+    animation-name: text-change_color;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes text-change_color {
+    0%{
+        background: linear-gradient(to right, #eee, red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    10%{
+        background: linear-gradient(to right, #eee, orange);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    20%{
+        background: linear-gradient(to right, #eee, yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    30%{
+        background: linear-gradient(to right, #eee, green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    40%{
+        background: linear-gradient(to right, #eee, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    50%{
+        background: linear-gradient(to right, #eee, indigo);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    60%{
+        background: linear-gradient(to right, #eee, violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    70%{
+        background: linear-gradient(to right, #eee, red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    80%{
+        background: linear-gradient(to right, #eee, orange);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    90%{
+        background: linear-gradient(to right, #eee, yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    100%{
+        background: linear-gradient(to right, #eee, green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.hero-introduce{
+    margin-bottom: 48px;
+}
+
+.know-me__title{
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+.know-introduce{
+    margin-bottom: 48px;
+    font-weight: 300;
+}
+
+.project__title{
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+.card .card-img-top{
+    border-radius: 30px;
+}
+
+.card .img-card{
+    position: relative;
+}
+
+.card .img-card::after{
+    content: "";
+
+    display: block;
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 30px;
+    background-color: var(--absolute-primary);
+    opacity: 0%;
+
+    transition: opacity 500ms ease-in-out;
+}
+
+.card .img-card:hover::after{
+    opacity: 60%;
+}
+
+.card .img-card button{
+    opacity: 0%;
+    transition: all 500ms ease-in-out;
+}
+
+
+.card .img-card:hover button{
+    opacity: 100%;
+}
+
+.card .img-card .btn-view:hover{
+    background-color: var(--white-97);
+    color: var(--absolute-primary);
+}
+
+.card .card-body{
+    margin-top: 24px;
+    padding: 0px;
+}
+
+.card-body .card-title{
+    color: var(--white-95);
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.card-body .tag{
+    margin-top: 13px;
+    gap: 16px;
+}
+
+.tag .tag-items{
+    padding: 8px 16px;
+    border: 2px solid var(--white-90);
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--white-95);
+}
+
+.contact{
+    margin-top: 120px;
+    margin-bottom: 225px;
+}
+
+.contact .d-flex{
+    gap: 32px;
+}
+
+.contact-header{
+    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 1.075rem + 0.25vw, 1.375rem);
+    line-height: 28px;
+    color: var(--white-95)
+}
+.contact-title{
+    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 1.05rem + 1vw, 2.25rem);
+    line-height: 28px;
+    color: var(--white-95)
+}
+.contact-email{
+    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 0.8999999999999999rem + 1.7500000000000002vw, 3rem);
+    line-height: 28px;
+    color: var(--white-95)
+}
+
+.socials .bi{
+    width: 24px;
+    height: 24px;
+    color: var(--white-95);
+}
+
+.copyright{
+    margin-top: 80px;
+    margin-bottom: 140px;
+    gap: 8px;
+}
+
+.copyright-logo{
+    color: var(--white-95);
+}
+.copyright-name{
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--white-97);
+}   
