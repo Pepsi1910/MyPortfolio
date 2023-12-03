@@ -46,62 +46,62 @@
 
 @keyframes text-change_color {
     0%{
-        background: linear-gradient(to right, #eee, red);
+        background: linear-gradient(to right, #eee, #cf6679);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     10%{
-        background: linear-gradient(to right, #eee, orange);
+        background: linear-gradient(to right, #eee, #03dac6);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
 
     20%{
-        background: linear-gradient(to right, #eee, yellow);
+        background: linear-gradient(to right, #eee, #44cc77);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     30%{
-        background: linear-gradient(to right, #eee, green);
+        background: linear-gradient(to right, #eee, #ff74d9);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     40%{
-        background: linear-gradient(to right, #eee, blue);
+        background: linear-gradient(to right, #eee, #a5c53c);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     50%{
-        background: linear-gradient(to right, #eee, indigo);
+        background: linear-gradient(to right, #eee, #f1c40f);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     60%{
-        background: linear-gradient(to right, #eee, violet);
+        background: linear-gradient(to right, #eee, #bb86fc);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     70%{
-        background: linear-gradient(to right, #eee, red);
+        background: linear-gradient(to right, #eee, #ff8975);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     80%{
-        background: linear-gradient(to right, #eee, orange);
+        background: linear-gradient(to right, #eee, #73ffe0);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     90%{
-        background: linear-gradient(to right, #eee, yellow);
+        background: linear-gradient(to right, #eee, #45adff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     100%{
-        background: linear-gradient(to right, #eee, green);
+        background: linear-gradient(to right, #eee, #6200ee);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -120,6 +120,8 @@
     margin-bottom: 48px;
     font-weight: 300;
 }
+
+
 
 .project__title{
     margin-top: 120px;
