@@ -5,7 +5,7 @@
     top: 3px;
     width: 0%;
     height: 4px;
-    background-color: white;
+    background-color: var(--purple-90);
     transition: width 500ms ease-in-out;
 }
 
@@ -23,11 +23,41 @@
 }
 
 .hero-name{
-    font-size: 32px;
+    font-size: 34px;
     line-height: 40px;
     color: var(--white-95);
     margin-bottom: 24px;
+    white-space: nowrap;
 }
+
+.name-highlight{
+    margin-left: 7px;
+    color: var(--purple-90);
+    border-right: 5px solid #ebf1f1;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(20) infinite, caret 0.5s steps(2) infinite;
+}
+
+@keyframes caret {
+    from{
+        border-color: transparent;
+    }
+    to{
+        border-color: #ebf1f1;
+    }
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    
+    to{
+        width: 100%;
+    }
+}
+
 .hero-job{
     font-size: 48px;
     line-height: 58px;
@@ -36,7 +66,7 @@
 }
 
 .text-discolor{
-    background: linear-gradient(to right, #eee, blue);
+    background: linear-gradient(to bottom right, #eee, blue, #eee);
 
     animation-name: text-change_color;
     animation-duration: 8s;
@@ -46,62 +76,62 @@
 
 @keyframes text-change_color {
     0%{
-        background: linear-gradient(to right, #eee, #cf6679);
+        background: linear-gradient(to bottom right, #eee, #cf6679);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     10%{
-        background: linear-gradient(to right, #eee, #03dac6);
+        background: linear-gradient(to bottom right, #eee, #03dac6);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
 
     20%{
-        background: linear-gradient(to right, #eee, #44cc77);
+        background: linear-gradient(to bottom right, #eee, #44cc77);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     30%{
-        background: linear-gradient(to right, #eee, #ff74d9);
+        background: linear-gradient(to bottom right, #eee, #ff74d9);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     40%{
-        background: linear-gradient(to right, #eee, #a5c53c);
+        background: linear-gradient(to bottom right, #eee, #a5c53c);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     50%{
-        background: linear-gradient(to right, #eee, #f1c40f);
+        background: linear-gradient(to bottom right, #eee, #f1c40f);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     60%{
-        background: linear-gradient(to right, #eee, #bb86fc);
+        background: linear-gradient(to bottom right, #eee, #bb86fc);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     70%{
-        background: linear-gradient(to right, #eee, #ff8975);
+        background: linear-gradient(to bottom right, #eee, #ff8975);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     80%{
-        background: linear-gradient(to right, #eee, #73ffe0);
+        background: linear-gradient(to bottom right, #eee, #73ffe0);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     90%{
-        background: linear-gradient(to right, #eee, #45adff);
+        background: linear-gradient(to bottom right, #eee, #45adff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     100%{
-        background: linear-gradient(to right, #eee, #6200ee);
+        background: linear-gradient(to bottom right, #eee, #6200ee);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -111,13 +141,52 @@
     margin-bottom: 48px;
 }
 
+.hero-img-avatar{
+    position: relative;
+    width: fit-content;
+    background-color: #d0c6ff25;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    transition: all 1s;
+}
+
+.hero-img-avatar::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: -20px;
+    left: -20px;
+    border-top: 10px solid var(--purple-90);
+    border-left: 10px solid var(--purple-90);
+}
+
+.hero-img-avatar::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    bottom: -20px;
+    right: -20px;
+    border-bottom: 10px solid var(--purple-90);
+    border-right: 10px solid var(--purple-90);
+}
+
 .know-me__title{
     margin-top: 120px;
     margin-bottom: 80px;
 }
 
+.know-me__img{
+    padding: 0px 8px; 
+    border: 4px solid var(--purple-90); 
+    border-radius: 20px; 
+    background-color: #0A0119;
+}
+
 .know-introduce{
-    margin-bottom: 48px;
+    margin-bottom: 30px;
     font-weight: 300;
 }
 
@@ -225,10 +294,18 @@
     color: var(--white-95)
 }
 
-.socials .bi{
-    width: 24px;
-    height: 24px;
+.socials .icon-socials{
+    box-sizing: content-box;
+    padding: 20px 10px;
+    border: 2px var(--white-95) solid;
+    border-radius: 100%;
     color: var(--white-95);
+    transition: all 0.2s ease-in-out;
+}
+
+.socials .icon-socials:hover{
+    background-color: var(--white-95);
+    color: var(--absolute-primary); 
 }
 
 .copyright{
