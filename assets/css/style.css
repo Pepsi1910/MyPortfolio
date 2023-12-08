@@ -1,3 +1,18 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 18%;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--purple-90);
+    border-radius: 100px;
+}
+
+
 .custom-nav li a::after{
     content: "";
     display: block;
@@ -36,7 +51,7 @@
     border-right: 5px solid #ebf1f1;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 3s steps(20) infinite, caret 0.5s steps(2) infinite;
+    animation: typing 3s steps(20) infinite alternate, caret 0.5s steps(2) infinite;
 }
 
 @keyframes caret {
