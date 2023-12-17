@@ -81,74 +81,34 @@ body::-webkit-scrollbar-thumb{
 }
 
 .text-discolor{
-    background: linear-gradient(to bottom right, #eee, blue, #eee);
+    text-shadow:
+     0 0 5px var(--purple-90), 
+     0 0 15px var(--purple-90), 
+     0 0 20px var(--purple-90), 
+     0 0 40px var(--purple-90), 
+     /* 0 0 50px var(--purple-90),  */
+     0 0 10px var(--purple-90);
 
-    animation-name: text-change_color;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    color: var(--purple-95);
+
+    animation: blink 5s infinite;
 }
 
-@keyframes text-change_color {
-    0%{
-        background: linear-gradient(to bottom right, #eee, #cf6679);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+@keyframes blink {
+    20%,24%,55% {
+      color: #111;
+      text-shadow: none;
     }
-
-    10%{
-        background: linear-gradient(to bottom right, #eee, #03dac6);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-
-    20%{
-        background: linear-gradient(to bottom right, #eee, #44cc77);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    30%{
-        background: linear-gradient(to bottom right, #eee, #ff74d9);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    40%{
-        background: linear-gradient(to bottom right, #eee, #a5c53c);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    50%{
-        background: linear-gradient(to bottom right, #eee, #f1c40f);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    60%{
-        background: linear-gradient(to bottom right, #eee, #bb86fc);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    70%{
-        background: linear-gradient(to bottom right, #eee, #ff8975);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    80%{
-        background: linear-gradient(to bottom right, #eee, #73ffe0);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    90%{
-        background: linear-gradient(to bottom right, #eee, #45adff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    100%{
-        background: linear-gradient(to bottom right, #eee, #6200ee);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+  
+    0%,19%,21%,23%,25%,54%,56%,100% {
+    text-shadow:
+     0 0 5px var(--purple-90), 
+     0 0 15px var(--purple-90), 
+     0 0 20px var(--purple-90), 
+     0 0 40px var(--purple-90), 
+     /* 0 0 50px var(--purple-90),  */
+     0 0 10px var(--purple-90);
+    color: var(--purple-95);
     }
 }
 
@@ -309,16 +269,16 @@ body::-webkit-scrollbar-thumb{
     color: var(--white-95)
 }
 
-.socials .icon-socials{
+.socials .icon-socials::before{
     box-sizing: content-box;
-    padding: 20px 10px;
+    padding: 10px;
     border: 2px var(--white-95) solid;
     border-radius: 100%;
     color: var(--white-95);
     transition: all 0.2s ease-in-out;
 }
 
-.socials .icon-socials:hover{
+.socials .icon-socials:hover::before{
     background-color: var(--white-95);
     color: var(--absolute-primary); 
 }
